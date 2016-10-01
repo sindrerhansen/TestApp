@@ -5,9 +5,16 @@
     xmlns:local="using:TestApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <FlyoutBase.AttachedFlyout>
+            <MenuFlyout/>
+        </FlyoutBase.AttachedFlyout>
+        <Button x:Name="button" Content="Press me" HorizontalAlignment="Left" Margin="192,262,0,0" VerticalAlignment="Top" Height="115" Width="380" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="192,113,0,0" TextWrapping="Wrap" Text="{Binding Uptime}" VerticalAlignment="Top" Height="96" Width="380"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="640,113,0,0" TextWrapping="Wrap" Text="{Binding Path=Tekst}" VerticalAlignment="Top" Height="96" Width="135"/>
 
     </Grid>
 </Page>
